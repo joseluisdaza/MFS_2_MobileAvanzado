@@ -87,6 +87,26 @@ class _HomeState extends State<Home> {
     });
   }
 
+  Future<void> cancelar() async {
+    if (!estaCorriendo) return;
+
+    replyPort?.close(); // cierro el canal
+    replyPort = null;
+    isolate?.kill();
+    isolate = null;
+    workerPort = null;
+
+    setState(() {
+      estaCorriendo = false;
+      listaPerfectos.clear();
+      tedNumero.clear();
+    });
+
+    await spanWorker(); // nuevo worker
+
+    snack('Cancelado');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,7 +116,7 @@ class _HomeState extends State<Home> {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
-            Row(children: [data(), boton()]),
+            Row(children: [data(), boton(), cancelButton()]),
             animado(),
             listado(),
           ],
@@ -143,6 +163,15 @@ class _HomeState extends State<Home> {
         inicio();
       },
       child: Text('Inicio'),
+    );
+  }
+
+  Widget cancelButton() {
+    return ElevatedButton(
+      onPressed: () {
+        cancelar();
+      },
+      child: Text('CANCELAR'),
     );
   }
 
