@@ -4,8 +4,7 @@
 // import 'package:demo/fibo_isolate.dart';
 
 // import 'package:demo/llamadas_isolates/perfecto_isolate_spawn.dart';
-// import 'package:demo/llamadas_isolates/perfecto_isolate_spawn_docente.dart';
-import 'package:demo/clase2/carritoSingleton/pages/home.dart';
+import 'package:demo/llamadas_isolates/perfecto_isolate_spawn_docente.dart';
 
 import 'package:flutter/material.dart';
 
