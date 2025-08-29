@@ -5,7 +5,12 @@
 
 // import 'package:demo/llamadas_isolates/perfecto_isolate_spawn.dart';
 // import 'package:demo/llamadas_isolates/perfecto_isolate_spawn_docente.dart';
-import 'package:demo/clase2/carritoSingleton/pages/home.dart';
+
+//clase 02
+// import 'package:demo/clase2/carritoSingleton/pages/home.dart';
+
+//Tarea Clase 2 Singleton y Mixins
+import 'package:demo/tareaClase2/widgets/pantallaPrincipal.dart';
 
 import 'package:flutter/material.dart';
 
