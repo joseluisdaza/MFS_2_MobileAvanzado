@@ -10,10 +10,7 @@
 // import 'package:demo/clase2/carritoSingleton/pages/home.dart';
 
 //Tarea Clase 2 Singleton y Mixins
-// import 'package:demo/tareaClase2/widgets/pantallaPrincipal.dart';
-
-//Clase3
-import 'package:demo/clase3/home.dart';
+import 'package:demo/tareaClase2/widgets/pantallaPrincipal.dart';
 
 import 'package:flutter/material.dart';
 
