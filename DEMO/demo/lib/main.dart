@@ -16,7 +16,10 @@
 //import 'package:demo/clase3/home.dart';
 
 //Clase4
-import 'package:demo/clase4/home.dart';
+//import 'package:demo/clase4/home.dart';
+
+//Clase5
+import 'package:demo/clase5/home.dart';
 
 import 'package:flutter/material.dart';
 
@@ -31,7 +34,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Mobile Advanzado - Flutter',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const Home(),
     );
