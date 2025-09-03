@@ -13,7 +13,10 @@
 // import 'package:demo/tareaClase2/widgets/pantallaPrincipal.dart';
 
 //Clase3
-import 'package:demo/clase3/home.dart';
+//import 'package:demo/clase3/home.dart';
+
+//Clase4
+import 'package:demo/clase4/home.dart';
 
 import 'package:flutter/material.dart';
 
