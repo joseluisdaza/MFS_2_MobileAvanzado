@@ -1,4 +1,5 @@
 import 'package:demo/clase3/codigo_exahaustivo.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -39,6 +40,17 @@ class _HomeState extends State<Home> {
     });
   }
 
+  // Configura el estilo de cada paso
+  _configStep(s) {
+    return StepStyle(
+      //Cambiar el color del circulo del step actual
+      indexStyle: TextStyle(
+        color: (_currentStep == s ? Colors.white : Colors.black),
+      ),
+      color: (_currentStep == s ? Colors.green.shade900 : Colors.grey.shade200),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,6 +82,7 @@ class _HomeState extends State<Home> {
                 //Step 1
                 Step(
                   title: Text('Email y Password'),
+                  stepStyle: _configStep(0),
                   content: Container(
                     alignment: Alignment.centerLeft,
                     child: Column(
@@ -107,6 +120,7 @@ class _HomeState extends State<Home> {
                 //Step 2
                 Step(
                   title: Text('Nombre, Celular, Fijo'),
+                  stepStyle: _configStep(2),
                   content: Column(
                     children: [
                       TextFormField(
@@ -154,6 +168,7 @@ class _HomeState extends State<Home> {
                 //Step 3
                 Step(
                   title: Text('Cajon postal, calle, Número, ciudad'),
+                  stepStyle: _configStep(3),
                   content: Column(
                     children: [
                       TextFormField(
