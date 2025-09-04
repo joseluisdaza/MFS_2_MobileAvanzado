@@ -1,5 +1,3 @@
-import 'package:demo/clase3/codigo_exahaustivo.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {

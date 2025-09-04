@@ -19,8 +19,8 @@
 //import 'package:demo/clase4/home.dart';
 
 //Clase5
-// import 'package:demo/clase5/home.dart';
-import 'package:demo/clase5/homeHorizontal.dart';
+import 'package:demo/clase5/home.dart';
+// import 'package:demo/clase5/homeHorizontal.dart';
 
 import 'package:flutter/material.dart';
 

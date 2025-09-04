@@ -24,8 +24,8 @@ class _HomeState extends State<Home> {
 
   _siguiente() {
     setState(() {
-      //Evitamos ir al paso 3 o mas, porque solo estamos disendo 3 pasos, (0,1,2  )
-      if (_currentStep < 2) {
+      //Evitamos ir al paso 3 o mas, porque solo estamos disendo 6 pasos, (0,1,2,3,4,5)
+      if (_currentStep < 6) {
         _currentStep++;
       }
     });
@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
               steps: <Step>[
                 //Step 1
                 Step(
-                  title: Text('Email y Password'),
+                  title: Text('Email y Password CHANGED'),
                   stepStyle: _configStep(0),
                   content: Container(
                     alignment: Alignment.centerLeft,
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
                 //Step 2
                 Step(
                   title: Text('Nombre, Celular, Fijo'),
-                  stepStyle: _configStep(2),
+                  stepStyle: _configStep(1),
                   content: Column(
                     children: [
                       TextFormField(
@@ -168,7 +168,7 @@ class _HomeState extends State<Home> {
                 //Step 3
                 Step(
                   title: Text('Cajon postal, calle, Número, ciudad'),
-                  stepStyle: _configStep(3),
+                  stepStyle: _configStep(2),
                   content: Column(
                     children: [
                       TextFormField(
@@ -213,6 +213,148 @@ class _HomeState extends State<Home> {
                       TextFormField(
                         decoration: InputDecoration(
                           labelText: 'Ingresa la ciudad',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Step(
+                  title: Text('tarjeta de crédito'),
+                  stepStyle: _configStep(3),
+                  content: Column(
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa el número de tarjeta',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa la fecha de expiración',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa el CVV',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Step(
+                  title: Text('Datos del pasaporte'),
+                  stepStyle: _configStep(4),
+                  content: Column(
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa el número de pasaporte',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa la nacionalidad',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa la fecha de expiración',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Step(
+                  title: Text('Datos del seguro médico'),
+                  stepStyle: _configStep(5),
+                  content: Column(
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa el número de póliza',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'Ingresa la compañía aseguradora',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              color: Colors.grey,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText:
+                              'Ingresa el número de contacto de emergencia',
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide(
