@@ -19,8 +19,10 @@
 //import 'package:demo/clase4/home.dart';
 
 //Clase5
-import 'package:demo/clase5/home.dart';
-// import 'package:demo/clase5/homeHorizontal.dart';
+//import 'package:demo/clase5/home.dart';
+//import 'package:demo/clase5/homeHorizontal.dart';
+// import 'package:demo/clase5/hooks/home.dart';
+import 'package:demo/clase5/hooks/home2.dart';
 
 import 'package:flutter/material.dart';
 
@@ -37,7 +39,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Mobile Advanzado - Flutter',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const Home(),
+      // home: const Home(),
+      home: Home(),
     );
   }
 }
